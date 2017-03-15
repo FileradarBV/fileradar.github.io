@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
-
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Fileradar" />
-
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
@@ -20,9 +19,10 @@
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
 	<link rel="stylesheet" href="css/leaflet.css">
+
 	<!-- Document Title
 	============================================= -->
-	<title>Traffic 360</title>
+	<title>App</title>
 <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 </head>
 
@@ -145,10 +145,11 @@
 
 		<!-- Page Title
 		============================================= -->
-		<section id="page-title" class="page-title-mini">
+		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>Traffic 360</h1>
+				<h1>Fileradar App</h1>
+				<span>Coming soon</span>
 				
 			</div>
 
@@ -162,165 +163,173 @@
 
 				<div class="container clearfix">
 
-					<div class="row topmargin-sm clearfix">
-
-						<div class="col-md-4 bottommargin">
-							
-								<div class="heading-block nobottomborder" style="margin-bottom: 15px;">
-									<h4>Data</h4>
-								</div>
-								<div class="feature-box fbox-small fbox-plain fbox-small" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-line2-speedometer"></i>
-									</div>
-									<h5>National Data Warehouse loop speed flow data</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<img src="icons/accident.png" >
-									</div>
-									<h5>National Data Warehouse event data</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-									<img src="icons/congestion.png" >
-									 </div>
-									<h5>Floating Car Data</h5>
-									
-								</div>
-
-									<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-											<i class="icon-ambulance"></i>
-									</div>
-									<h5>Emergency services - 112 Calls</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-twitter"></i>
-									</div>
-									<h5>Twitter</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-map"></i>
-									</div>
-									<h5>Open Street Map Network</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<img src="icons/rain.png" >
-									</div>
-									<h5>Weather services</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-cloud-upload"></i>
-									</div>
-									<h5>Custom dataset, API</h5>
-									
-								</div>
-
-
-
-							
-								<div class="feature-box fbox-small fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-map-marker"></i>
-									</div>
-									<h5>Location and status of measures (VRI, TDI, VMS, peak hour lanes, matrix signals)</h5>
-								</div>
-						</div>
-
-						<div class="col-md-4 bottommargin">
-								<div class="heading-block nobottomborder" style="margin-bottom: 15px;">
-								
-									<h4>Analytics</h4>
-								</div>
-								<div class="feature-box fbox-small fbox-plain fbox-small" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-barcode"></i></a>
-									</div>
-									<h5>Congestion tracking on urban and exurban network</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-plain" data-animate="fadeIn">
-									
-								<div class="fbox-icon">
-									<img src="icons/congestion.png" >
-									 </div>
-
-									<h5>Shockwave tracking</h5>
-									
-								</div>
-
-								<div class="feature-box fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-line-shuffle"></i>
-									</div>
-									<h5>Link all data to tracked instances and network</h5>
-								</div>
-								
-						</div>
-
-						<div class="col-md-4 bottommargin">
-							
-								<div class="heading-block nobottomborder" style="margin-bottom: 15px;">
-									<h4>Dissemination</h4>
-								</div>
-								<div class="feature-box fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-line-monitor"></i>
-									</div>
-
-								<h5>www client *.dantesoftware.com</h5>
-								</div>
-
-								<div class="feature-box fbox-small fbox-plain" data-animate="fadeIn">
-									<div class="fbox-icon">
-										<i class="icon-map"></i>
-									</div>
-
-								<h5>Interactive map</h5>
-								</div>
+					<div class="col_one_third">
+						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-line-shuffle i-alt"></i></a>
 							</div>
+							<h3>Routeplanning<span class="subtitle">Based on the same backend products that National Transport managers use</span></h3>
+						</div>
+					</div>
+
+					<div class="col_one_third">
+						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-line-layers i-alt"></i></a>
+							</div>
+							<h3>Public &amp; Propriatery Sources<span class="subtitle">From national data sources to Twitter, We monitor all sources relevant to your trip</span></h3>
+						</div>
 					</div>
 
 					
-					<div class="container">
-						<i class="i-plain color i-med icon-diamond" style="margin-bottom: 15px;"></i>
-						
-						<h3>Customer value</h3>
+
+					<div class="col_one_third col_last">
+						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-ambulance i-alt"></i></a>
+							</div>
+							<h3>Events<span class="subtitle">Suggesting alternatives before the need arises</span></h3>
+						</div>
+					</div>
+
+					<div class="clear"></div>
 
 					
 
-						<p>
-						We provide a compact view of the information that is released from all the sources in your network (instead of split views on all separate sources). All relevant information (congestion, events, status of measures) linked to a congestion instance is presented providing full situational awareness (common operational picture) when zoomed out and show all the linked data sources to congestion when zoomed in.</p>
-								<p>Ability to seamlessly look up past events with the time-slider.<br>
-								Ability to see ”fleet” in Traffic 360.</p>
-
-
-						</p>
-						
+					<div class="col_one_third nobottommargin">
+						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-line-clock i-alt"></i></a>
+							</div>
+							<h3>Travel times<span class="subtitle">Providing routing based on preferred arrival times</span></h3>
+						</div>
 					</div>
+					<div class="col_one_third nobottommargin">
+						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-line2-speedometer i-alt"></i></a>
+							</div>
+							<h3>Shockwave tracker<span class="subtitle">Recommending speeds to avoid shockwaves</span></h3>
+						</div>
+					</div>
+
+					<div class="col_one_third nobottommargin col_last">
+						<div class="feature-box fbox-center fbox-outline fbox-effect nobottomborder">
+							<div class="fbox-icon">
+								<a href="#"><i class="icon-cogs i-alt"></i></a>
+							</div>
+							<h3>Save trips<span class="subtitle">Save trips &amp; customise your app to get notifications when its time to go.</span></h3>
+						</div>
+					</div>
+
 				</div>
+
+				<div class="section">
+
+					<div class="container clear-bottommargin clearfix">
+
+						<div class="heading-block center">
+							<h2>Features List</h2>
+							
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-4 bottommargin">
+								<img data-animate="fadeInLeftBig" src="images/services/app.png" alt="iPhone" class="center-block">
+							</div>
+
+							<div class="col-md-4 col-sm-6 topmargin bottommargin">
+
+								<div class="col_full">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line-monitor"></i></a>
+										</div>
+										<h3>Responsive Layout</h3>
+										<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view the changes.</p>
+									</div>
+
+								</div>
+
+								<div class="col_full">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line-eye"></i></a>
+										</div>
+										<h3>Retina Ready Graphics</h3>
+										<p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
+									</div>
+
+								</div>
+
+								<div class="col_full nobottommargin">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line-power"></i></a>
+										</div>
+										<h3>Powerful Performance</h3>
+										<p>Fileradar dedicated back-end server</p>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-4 col-sm-6 topmargin bottommargin">
+
+								<div class="col_full">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line-layers"></i></a>
+										</div>
+										<h3>Data layers</h3>
+										<p>Showing only data that is relevant to you. No reason for distractions.</p>
+									</div>
+
+								</div>
+
+								<div class="col_full">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line-star"></i></a>
+										</div>
+										<h3>Add your favourite locations</h3>
+										<p>Customise the tool for your own needs. Optional alarms for best time to leave for home/work.</p>
+									</div>
+
+								</div>
+
+								<div class="col_full nobottommargin">
+
+									<div class="feature-box fbox-plain fbox-small fbox-dark">
+										<div class="fbox-icon">
+											<a href="#"><i class="icon-line-anchor"></i></a>
+										</div>
+										<h3>Fileradar safety</h3>
+										<p>We use the latest encription technologies to ensure your data is availalbe only for you.</p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				
+
 			</div>
 
 		</section><!-- #content end -->
-
 
 		<!-- Footer
 		============================================= -->
