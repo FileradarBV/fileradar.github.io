@@ -946,13 +946,13 @@ div[data-overlay] ul {
   padding-left: 1.85714286em;
 }
 .btn--lg {
-  padding-top: 0.58035714em;
-  padding-bottom: 0.58035714em;
+  padding-top: 1.58035714em;
+  padding-bottom: 1.58035714em;
   padding-right: 3.48214286em;
   padding-left: 3.48214286em;
 }
 .btn--lg .btn__text {
-  font-size: 1.07142857em;
+  font-size: 0.8em;
 }
 .btn--primary,
 .btn--primary:visited {
@@ -4477,10 +4477,10 @@ p > .btn {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 13px;
+  
+  padding: 23px 0 0 13px;
   border-radius: 6px 0 0 6px;
-  font-size: 16px;
+  font-size: 40px;
   line-height: 41px;
 }
 .btn--icon i.socicon {
